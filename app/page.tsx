@@ -137,7 +137,7 @@ export default function Home() {
     { name: "About", id: "about" },
     { name: "Markets", id: "markets" },
     // { name: "Testimonials", id: "testimonials" },
-    { name: "Comission", id: "comission" },
+    { name: "Commission", id: "comission" },
     { name: "Team", id: "team" },
     { name: "Contact", id: "contact" },
   ]
