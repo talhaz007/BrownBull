@@ -1448,7 +1448,12 @@ export default function Home() {
                   <div className="border-t border-b border-amber-200 py-4 my-4">
                     <div className="flex justify-between mb-2">
                       <div className="text-amber-800/70">Membership Number:</div>
-                      <div className="font-medium text-amber-900">(TREC) NO. 313</div>
+                      <div 
+                        className="font-medium text-amber-900 cursor-pointer hover:text-amber-600 hover:underline"
+                        onClick={() => window.open("/assets/certificate.jpg", "_blank")}
+                      >
+                        (TREC) NO. 313
+                      </div>
                     </div>
                     <div className="flex justify-between mb-2">
                       <div className="text-amber-800/70">Issued Date:</div>
