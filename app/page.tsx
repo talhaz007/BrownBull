@@ -1312,8 +1312,8 @@ export default function Home() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { value: "7", label: "Years Of Experience", prefix: "" },
-                { value: "71", label: "Clients", prefix: "" },
+                { value: "9", label: "Years Of Experience", prefix: "" },
+                { value: "2500+", label: "Clients", prefix: "" },
                 { value: "20", label: "Professionals Team Member", prefix: "" },
                 { value: "5", label: "Awards Winning", prefix: "" },
               ].map((stat, index) => (
