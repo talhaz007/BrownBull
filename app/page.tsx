@@ -134,7 +134,7 @@ export default function Home() {
   const navItems = [
     { name: "Home", id: "home" },
     { name: "Services", id: "services" },
-    { name: "About", id: "about" },
+    { name: "Certifications", id: "about" },
     { name: "Markets", id: "markets" },
     // { name: "Testimonials", id: "testimonials" },
     { name: "Commission", id: "comission" },
@@ -1343,7 +1343,7 @@ export default function Home() {
         </section>
 
         {/* PMEX Certification Section */}
-        <section className="py-20 bg-gradient-to-r from-amber-50 to-amber-100 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-r from-amber-50 to-amber-100 relative overflow-hidden" id="about">
           <div className="container relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
