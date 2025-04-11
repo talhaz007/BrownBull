@@ -783,7 +783,7 @@ export default function Home() {
                       <div className="p-4">
                         <div className="flex justify-between items-center mb-4">
                           <div>
-                            <div className="text-amber-900 font-medium">Gold (XAU/USD)</div>
+                            <div className="text-amber-900 font-medium">Gold</div>
                             <div className={`text-sm ${marketData.gold.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                               ${isLoading ? '---' : marketData.gold.price.toFixed(2)} 
                               {!isLoading && ` ${marketData.gold.change >= 0 ? '+' : ''}${marketData.gold.change.toFixed(2)} (${marketData.gold.changePercent.toFixed(1)}%)`}
