@@ -123,6 +123,13 @@ export default function Home() {
       return;
     }
     
+    // Special case for complaints - navigate to complaints page
+    if (sectionId === "complaints") {
+      window.location.href = "/complaints"; // Navigate to the complaints page
+      setNavOpen(false);
+      return;
+    }
+    
     const section = document.getElementById(sectionId)
     if (section) {
       section.scrollIntoView({ behavior: "smooth" })
@@ -140,6 +147,7 @@ export default function Home() {
     { name: "Commission", id: "comission" },
     { name: "Team", id: "team" },
     { name: "Contact", id: "contact" },
+    { name: "Complaints", id: "complaints" },
   ]
 
   // Services data
