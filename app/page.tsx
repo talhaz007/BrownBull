@@ -1756,7 +1756,7 @@ export default function Home() {
                       <div className="font-medium text-amber-900 mb-1">Head Office:</div>
                       <div className="text-amber-900">185-A, Old Sattelite Town, Sargodha</div>
                       <div className="font-medium text-amber-900 mt-2 mb-1">Branch Office:</div>
-                      <div className="text-amber-900">504, 505, Fifth Floor, Vista Pakland, I-8 Markaz, Islamabad</div>
+                      <div className="text-amber-900">Office No. 7&8, 3rd Floor, Galleria Tower, I-8 Markaz Islamabad</div>
                     </div>
                   </div>
                 </motion.div>
@@ -1999,7 +1999,7 @@ export default function Home() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-amber-400 mt-0.5" />
-                  <span className="text-amber-200/80">504, 505, Fifth Floor, Vista Pakland, I-8 Markaz, Islamabad.</span>
+                  <span className="text-amber-200/80">Office No. 7&8, 3rd Floor, Galleria Tower, I-8 Markaz Islamabad</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-amber-400" />
