@@ -2028,10 +2028,10 @@ export default function Home() {
               &copy; {new Date().getFullYear()} BrownBull. All rights reserved.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <Link href="#" className="text-sm text-amber-200/80 hover:text-white transition-colors">
-                Privacy Policy
+              <Link href="/assets/policy.pdf" target="blank" className="text-sm text-amber-200/80 hover:text-white transition-colors">
+                Policy
               </Link>
-              <Link href="#" className="text-sm text-amber-200/80 hover:text-white transition-colors">
+              <Link href="/assets/Terms.pdf" target="blank" className="text-sm text-amber-200/80 hover:text-white transition-colors">
                 Terms of Service
               </Link>
               <Link href="#" className="text-sm text-amber-200/80 hover:text-white transition-colors">
