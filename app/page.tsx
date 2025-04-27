@@ -461,6 +461,21 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
+  const dropdownRef = useRef<HTMLDivElement>(null); // Create a ref for the dropdown
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setNavOpen(false); // Close the dropdown if clicked outside
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen relative">
       {/* Custom cursor effect (hidden on mobile) */}
@@ -543,7 +558,7 @@ export default function Home() {
                 </button>
                 {/* Dropdown for Investor Assistance */}
                 {item.id === "comission" && navOpen && (
-                  <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md z-10">
+                  <div ref={dropdownRef} className="absolute left-0 mt-2 bg-white shadow-lg rounded-md z-10">
                     <button
                       onClick={() => {
                         window.open("/assets/NEW_COMM_GROUP.pdf", "_blank");
@@ -590,7 +605,7 @@ export default function Home() {
                       PMEX License
                     </button>
                   </div>
-            )}
+                )}
               </div>
             ))}
           </nav>
