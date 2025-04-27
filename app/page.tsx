@@ -543,54 +543,54 @@ export default function Home() {
                 </button>
                 {/* Dropdown for Investor Assistance */}
                 {item.id === "comission" && navOpen && (
-            <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md z-10">
-              <button
-                onClick={() => {
-                  window.open("/assets/NEW_COMM_GROUP.pdf", "_blank");
-                  setNavOpen(false);
-                }}
-                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
-              >
-                Commission
-              </button>
-              <button
-                onClick={() => {
-                  window.open("/assets/Terms.pdf", "_blank");
-                  setNavOpen(false);
-                }}
-                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
-              >
-                Do's and Don'ts
-              </button>
-              <button
-                onClick={() => {
-                  window.open("/assets/policy.pdf", "_blank");
-                  setNavOpen(false);
-                }}
-                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
-              >
-                No Cash Handling Policy
-              </button>
-              <button
-                onClick={() => {
-                  window.open("/assets/secp_license.pdf", "_blank");
-                  setNavOpen(false);
-                }}
-                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
-              >
-                SECP License
-              </button>
-              <button
-                onClick={() => {
-                  window.open("/assets/pmex_license.jpg", "_blank");
-                  setNavOpen(false);
-                }}
-                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
-              >
-                PMEX License
-              </button>
-            </div>
-)}
+                  <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md z-10">
+                    <button
+                      onClick={() => {
+                        window.open("/assets/NEW_COMM_GROUP.pdf", "_blank");
+                        setNavOpen(false);
+                      }}
+                      className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center cursor-pointer"
+                    >
+                      Commission
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.open("/assets/Terms.pdf", "_blank");
+                        setNavOpen(false);
+                      }}
+                      className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center cursor-pointer"
+                    >
+                      Do's and Don'ts
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.open("/assets/policy.pdf", "_blank");
+                        setNavOpen(false);
+                      }}
+                      className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center cursor-pointer"
+                    >
+                      No Cash Handling Policy
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.open("/assets/secp_license.pdf", "_blank");
+                        setNavOpen(false);
+                      }}
+                      className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center cursor-pointer"
+                    >
+                      SECP License
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.open("/assets/pmex_license.jpg", "_blank");
+                        setNavOpen(false);
+                      }}
+                      className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center cursor-pointer"
+                    >
+                      PMEX License
+                    </button>
+                  </div>
+            )}
               </div>
             ))}
           </nav>
