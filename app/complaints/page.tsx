@@ -31,7 +31,7 @@ const Complaints = () => {
     { name: "Services", id: "services" },
     { name: "Certifications", id: "about" },
     { name: "Markets", id: "markets" },
-    { name: "Commission", id: "comission" },
+    { name: "Investor Assistance", id: "comission" },
     { name: "Team", id: "team" },
     { name: "Contact", id: "contact" },
     { name: "Complaints", id: "complaints" },

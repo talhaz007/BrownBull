@@ -144,7 +144,7 @@ export default function Home() {
     { name: "Certifications", id: "about" },
     { name: "Markets", id: "markets" },
     // { name: "Testimonials", id: "testimonials" },
-    { name: "Commission", id: "comission" },
+    { name: "Investor Assistance", id: "comission" },
     { name: "Team", id: "team" },
     { name: "Contact", id: "contact" },
     { name: "Complaints", id: "complaints" },
