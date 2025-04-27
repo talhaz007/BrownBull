@@ -518,23 +518,80 @@ export default function Home() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
+              <div key={item.id} className="relative">
+                <button
+                  onClick={() => {
+                    if (item.id === "comission") {
+                      setNavOpen(!navOpen); // Toggle dropdown for Investor Assistance
+                    } else {
+                      scrollToSection(item.id);
+                    }
+                  }}
+                  className={cn(
+                    "text-amber-900 font-medium hover:text-amber-600 transition-colors relative",
+                    activeSection === item.id && "text-amber-600",
+                  )}
+                >
+                  {item.name}
+                  {activeSection === item.id && (
+                    <motion.div
+                      layoutId="activeSection"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-amber-600"
+                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    />
+                  )}
+                </button>
+                {/* Dropdown for Investor Assistance */}
+                {item.id === "comission" && navOpen && (
+            <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md z-10">
               <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={cn(
-                  "text-amber-900 font-medium hover:text-amber-600 transition-colors relative",
-                  activeSection === item.id && "text-amber-600",
-                )}
+                onClick={() => {
+                  window.open("/assets/NEW_COMM_GROUP.pdf", "_blank");
+                  setNavOpen(false);
+                }}
+                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
               >
-                {item.name}
-                {activeSection === item.id && (
-                  <motion.div
-                    layoutId="activeSection"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-amber-600"
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
+                Commission
               </button>
+              <button
+                onClick={() => {
+                  window.open("/assets/Terms.pdf", "_blank");
+                  setNavOpen(false);
+                }}
+                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
+              >
+                Do's and Don'ts
+              </button>
+              <button
+                onClick={() => {
+                  window.open("/assets/policy.pdf", "_blank");
+                  setNavOpen(false);
+                }}
+                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
+              >
+                No Cash Handling Policy
+              </button>
+              <button
+                onClick={() => {
+                  window.open("/assets/secp_license.pdf", "_blank");
+                  setNavOpen(false);
+                }}
+                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
+              >
+                SECP License
+              </button>
+              <button
+                onClick={() => {
+                  window.open("/assets/pmex_license.jpg", "_blank");
+                  setNavOpen(false);
+                }}
+                className="block w-full px-4 py-2 text-amber-900 hover:bg-amber-100 whitespace-nowrap text-center"
+              >
+                PMEX License
+              </button>
+            </div>
+)}
+              </div>
             ))}
           </nav>
 
@@ -967,7 +1024,7 @@ export default function Home() {
               <motion.div
                 className="w-1.5 h-3 bg-amber-600 rounded-full"
                 animate={{ y: [0, 6, 0] }}
-                transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
+                transition={{ duration: 1.5, repeat: Infinity }}
               />
             </div>
           </motion.div>
