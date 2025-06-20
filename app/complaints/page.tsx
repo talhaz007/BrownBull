@@ -269,7 +269,7 @@ const Complaints = () => {
                   </p>
                   <p className="text-amber-800/80 mt-2">
                     <span className="block font-medium">Branch Office:</span>
-                    Office No. 7&8, 3rd Floor, Galleria Tower, I-8 Markaz Islamabad
+                    Office 504 505 vista by pakland i-8 markaz islamabad
                   </p>
                 </div>
               </div>
@@ -358,7 +358,7 @@ const Complaints = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-amber-400 mt-0.5" />
-                  <span className="text-amber-200/80">Office No. 7&8, 3rd Floor, Galleria Tower, I-8 Markaz Islamabad</span>
+                  <span className="text-amber-200/80">Office 504 505 vista by pakland i-8 markaz islamabad</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-amber-400" />
