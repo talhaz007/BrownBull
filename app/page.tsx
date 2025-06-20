@@ -1530,7 +1530,7 @@ export default function Home() {
                       <div className="text-amber-800/70">Membership Number:</div>
                       <div 
                         className="font-medium text-amber-900 cursor-pointer hover:text-amber-600 hover:underline"
-                        onClick={() => window.open("/assets/certificate.jpg", "_blank")}
+                        onClick={() => window.open("/assets/certificate_of_registration_of_branch.pdf", "_blank")}
                       >
                         (TREC) NO. 313
                       </div>
