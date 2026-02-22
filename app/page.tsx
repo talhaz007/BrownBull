@@ -665,7 +665,7 @@ export default function Home() {
                   <Button 
                     className="bg-amber-600 hover:bg-amber-700 text-white w-full"
                     onClick={() => {
-                      window.open("https://bbc.ihubresearch.com/login", "_blank");
+                      window.open("https://www.aof.com.pk/?Mjc2NDY3ODQxNzY4NzI1NDQ3OTcyNzM0MjgyNDY0NjI2MjIyMjQ3Nw==login", "_blank");
                       setNavOpen(false);
                     }}
                   >
@@ -678,7 +678,7 @@ export default function Home() {
 
           <Button 
             className="bg-amber-600 hover:bg-amber-700 text-white hidden md:flex"
-            onClick={() => window.open("https://bbc.ihubresearch.com/", "_blank")}
+            onClick={() => window.open("https://www.aof.com.pk/?Mjc2NDY3ODQxNzY4NzI1NDQ3OTcyNzM0MjgyNDY0NjI2MjIyMjQ3Nw==", "_blank")}
           >
             Open Account
           </Button>
@@ -1678,7 +1678,7 @@ export default function Home() {
         </section>
 
         {/* Team Section */}
-        <section id="team" ref={teamRef} className="py-24 bg-amber-50 relative overflow-hidden">
+        {/* <section id="team" ref={teamRef} className="py-24 bg-amber-50 relative overflow-hidden">
           <div className="container relative z-10">
             <div className="text-center mb-16">
               <motion.div
@@ -1745,7 +1745,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
         <section id="contact" ref={contactRef} className="py-24 bg-white relative overflow-hidden">
@@ -1988,7 +1988,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 className="bg-white text-amber-600 hover:bg-amber-100 group"
-                onClick={() => window.open("https://bbc.ihubresearch.com/login", "_blank")}
+                onClick={() => window.open("https://www.aof.com.pk/?Mjc2NDY3ODQxNzY4NzI1NDQ3OTcyNzM0MjgyNDY0NjI2MjIyMjQ3Nw==login", "_blank")}
               >
                 <span className="flex items-center">
                   Get Started Now

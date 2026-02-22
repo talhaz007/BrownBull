@@ -151,7 +151,7 @@ const Complaints = () => {
 
           <Button 
             className="bg-amber-600 hover:bg-amber-700 text-white hidden md:flex"
-            onClick={() => window.open("https://bbc.ihubresearch.com/", "_blank")}
+            onClick={() => window.open("https://www.aof.com.pk/?Mjc2NDY3ODQxNzY4NzI1NDQ3OTcyNzM0MjgyNDY0NjI2MjIyMjQ3Nw==", "_blank")}
           >
             Open Account
           </Button>
